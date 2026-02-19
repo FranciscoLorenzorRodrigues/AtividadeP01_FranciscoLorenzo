@@ -40,7 +40,7 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-// Orde decrescente
+// Ordem decrescente
 void preencherDecrescente(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         arr[i] = n - i;
@@ -86,7 +86,7 @@ int main(int argc, char *argv[]) {
         tempo_ms = (double)(fim - inicio) * 1000.0 / CLOCKS_PER_SEC;
         printf("%-15s %-10d %-12.2f %-15lld %-15lld\n", "Selection Sort", n, tempo_ms, comparacoes, movimentacoes);
 
-        free(vetor); // Libera memória antes do próximo tamanho
+        free(vetor); 
     }
 
     return 0;
